@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    
+    <!--fontawesome icons-->
+    <script src="https://kit.fontawesome.com/df898d24df.js" crossorigin="anonymous"></script>
+    
+    <!--style css-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!--search-->
+    <div class="search-container">
+      <div class="search-column">
+        <input type="text" id="search-column" placeholder="Search location" role="search" required />
+      </div>
+      
+      <div class="loader"></div>
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    
+    <!--weather container-->
+    <main class="container">
+      
+      <!--main weather information-->
+      <section class="weather">
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span role="region">unknowns</span>
+        </div>
+        <div class="icon">
+          <img src="img/unknowns.png" alt="weather-icon"/>
+        </div>
+        <div class="desktop-view">
+          <div class="temperature">
+            °<span>C</span>
+          </div>
+          <div class="condition">unknowns</div>
+        </div>
+      </section>
+      
+      <!--additional weather information-->
+      <section class="information">
+        <div class="humidity">
+          <i class="fa-solid fa-droplet"></i>
+          <span>unknowns</span>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <span>unknowns</span>
+        </div>
+        <div class="visibility">
+          <i class="fa-solid fa-eye"></i>
+          <span>unknowns</span>
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+      <section class="copyright">
+        &copy; 2024 Aditya Fahrezi, All Rights Reserved.
+      </section>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
